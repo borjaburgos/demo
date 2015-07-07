@@ -5,7 +5,7 @@ web-staging:
   ports:
       - "80"
   links:
-    - "redis:redis"
+    - "redis-staging:redis"
   environment:
     - NAME=amigos
   tags:
