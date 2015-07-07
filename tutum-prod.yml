@@ -26,7 +26,5 @@ web:
 redis:
   restart: always
   image: redis
-  environment:
-    - REDIS_PASS=password
   tags:
     - prod
