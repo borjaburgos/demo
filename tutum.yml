@@ -1,0 +1,24 @@
+lb:
+  image: 'tutum/haproxy:latest'
+  restart: always
+  links:
+    - web
+  ports:
+    - "80:80"
+  roles:
+    - global
+
+web:
+  image: 'tutum.co/borja/demo:staging'
+  restart: always
+  autoredeploy: true
+  links:
+    - "redis:redis"
+  environment:
+    - NAME=mundo
+
+redis:
+  restart: always
+  image: redis
+  environment:
+    - REDIS_PASS=password

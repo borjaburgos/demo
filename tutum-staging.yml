@@ -1,0 +1,20 @@
+web-staging:
+  image: 'tutum.co/borja/demo:staging'
+  restart: always
+  autoredeploy: true
+  ports:
+      - "80"
+  links:
+    - "redis:redis"
+  environment:
+    - NAME=amigos
+  tags:
+    - staging
+
+redis-staging:
+  restart: always
+  image: redis
+  environment:
+    - REDIS_PASS=password
+  tags:
+    - staging

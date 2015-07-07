@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e "\e[41m---------------------------"
+echo -e "\e[91mThis is the post-build test"
+echo -e "\e[41m---------------------------"
+exit 0

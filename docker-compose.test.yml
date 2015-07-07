@@ -1,0 +1,7 @@
+sut:
+  build: .
+  links:
+    - "redis:redis"
+  command: tests.sh
+redis:
+  image: redis
