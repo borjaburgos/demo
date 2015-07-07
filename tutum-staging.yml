@@ -14,7 +14,5 @@ web-staging:
 redis-staging:
   restart: always
   image: redis
-  environment:
-    - REDIS_PASS=password
   tags:
     - staging
