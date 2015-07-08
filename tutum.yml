@@ -9,7 +9,7 @@ lb:
     - global
 
 web:
-  image: 'tutum.co/borja/demo:staging'
+  image: 'tutum.co/borja/demo:latest'
   restart: always
   autoredeploy: true
   links:

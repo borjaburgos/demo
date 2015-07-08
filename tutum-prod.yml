@@ -14,7 +14,7 @@ web:
   image: 'tutum.co/borja/demo:latest'
   restart: always
   autoredeploy: true
-  links:
+  links: 
     - "redis:redis"
   target_num_containers: 3
   deployment_strategy: high_availability
