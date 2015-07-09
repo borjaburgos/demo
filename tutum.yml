@@ -17,7 +17,7 @@ web:
     - NAME=mundo
 
 redis:
-  image: 'redis'
+  image: redis
   restart: always
   environment:
     - REDIS_PASS=password
