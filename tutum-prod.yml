@@ -24,7 +24,7 @@ web:
     - prod
 
 redis:
-  restart: always
   image: redis
+  restart: always
   tags:
     - prod

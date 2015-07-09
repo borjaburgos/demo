@@ -9,16 +9,15 @@ lb:
     - global
 
 web:
-  image: 'tutum.co/borja/demo:staging'
+  image: 'borja/demo:latest'
   restart: always
-  autoredeploy: true
   links:
     - "redis:redis"
   environment:
     - NAME=mundo
 
 redis:
-  restart: always
   image: redis
+  restart: always
   environment:
     - REDIS_PASS=password
