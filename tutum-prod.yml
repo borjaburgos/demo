@@ -19,7 +19,7 @@ web:
   target_num_containers: 3
   deployment_strategy: high_availability
   environment:
-    - NAME=amigos
+    - NAME=mundo
   tags:
     - prod
 
