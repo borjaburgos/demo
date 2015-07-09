@@ -3,7 +3,7 @@ web-staging:
   restart: always
   autoredeploy: true
   ports:
-      - "80"
+      - "80:80"
   links:
     - "redis-staging:redis"
   environment:
