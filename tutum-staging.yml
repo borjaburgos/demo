@@ -7,7 +7,7 @@ web-staging:
   links:
     - "redis-staging:redis"
   environment:
-    - NAME=amigos
+    - NAME=mundo
   tags:
     - staging
 
