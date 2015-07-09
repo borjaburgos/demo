@@ -1,5 +1,5 @@
 sut:
-  build: this
+  image: this
   links:
     - "redis:redis"
   command: /app/tests.sh
