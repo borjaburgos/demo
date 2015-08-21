@@ -23,7 +23,7 @@ web:
   autoredeploy: true
   deployment_strategy: high_availability
   environment:
-    - NAME=mundo
+    - NAME=amigos
   links:
     - redis
   restart: always
@@ -31,4 +31,3 @@ web:
     - provider=digitalocean
     - prod
   target_num_containers: 3
-
