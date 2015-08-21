@@ -1,5 +1,5 @@
 web-staging:
-  image: 'tutum.co/borja/demo:staging'
+  image: 'tutum.co/borjaburgos/demo:staging'
   restart: always
   autoredeploy: true
   ports:
